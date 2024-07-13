@@ -6,7 +6,11 @@
 #include <cstdint>
 
 int main(){
-    
-    std::cout << std::endl << std::endl;
+
+    float weight = 10.99;
+
+    std::cout << weight << std::endl;
+    std::cout << (int)weight << std::endl;
+    std::cout << (int)(weight - (int)weight)*100 << std::endl;
     return (0);
 }
