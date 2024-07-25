@@ -17,7 +17,7 @@ class Course{
 private:
     int id;
     std::string name;
-    unsigned char credits;
+    unsigned char credits; // 8 bit integer
 
 public:
     Course(int the_id, std::string the_name, unsigned char the_credits);
