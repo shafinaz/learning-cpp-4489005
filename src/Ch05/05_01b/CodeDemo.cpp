@@ -23,7 +23,7 @@ int main(){
 
     std::cout << "Enter a student ID: " << std::flush;
     std::cin >> id;
-
+    float num_grd = 0.0f;
     float points = 0.0f, credits = 0.0f;
     for (Grade& grd : grades)
         if (grd.get_student_id() == id){
