@@ -3,24 +3,48 @@
 // Upgrade to work with files, by Eduardo Corpeño 
 
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include "records.h"
 
 void initialize(StudentRecords&);
+void initialize(StudentRecords&, std::ifstream&);
 
 int main(){
     int id;
     StudentRecords SR;
+
+    std::ifstream inFile;
+    std::ofstream outFile;
     
-    initialize(SR);
-
-    std::cout << "Enter a student ID: " << std::flush;
-    std::cin >> id;
-
-    SR.report_card(id);
+    initialize(SR, inFile);
+    //SR.report_file(outfile);
+    //SR.report_card(id);
     
     std::cout << std::endl << std::endl;
     return (0);
+}
+
+void initialize(StudentRecords& srec, std::ifstream& inFile){
+    inFile.open("students.txt");
+
+    /*if (courseFile.fail() || gradeFile.fail() || studentFile.fail())
+    {
+        std::cout << "File is not available!" << std::endl;
+    }
+    else
+    {
+        int j = 0;
+        std::string str1, str2;
+        while(!studentFile.eof())
+        {
+            getline(studentFile[j], str);
+            getline(studentFile[j+1], str2);
+            srec.add_student(Student(str, str2));
+            j+=2;
+        }
+    }*/
+
 }
 
 void initialize(StudentRecords& srec){
