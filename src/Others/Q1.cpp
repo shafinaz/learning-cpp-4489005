@@ -1,10 +1,10 @@
-#include <vector>
+//#include <vector>
 /// @param deck The initial ordered sequence of card face values in the game's deck
 /// @pre @p deck is not empty
 /// @returns The difference between Miriam's and Alejandro's scores at the end of the game, assuming that Miriam draws
 ///   the first card. A positive return value indicates that Miriam won the game, while a negative return value
 ///   indicates that Alejandro won the game. A return value of 0 indicates a draw/tie.
-int computeDifference(const std::vector<int> &deck) {
+/*int computeDifference(const std::vector<int> &deck) {
     // implement me!
 }
 #include <fstream>
@@ -13,7 +13,7 @@ int computeDifference(const std::vector<int> &deck) {
 int readInteger2(bool wholeLine);
 
 
-int main()
+/*int main()
 {
     // read in test case
     std::vector<int> deck{};
@@ -36,12 +36,12 @@ int main()
     
     // return
     return 0;
-}
+}*/
 
 
-int readInteger2(bool wholeLine) {
+/*int readInteger2(bool wholeLine) {
     int value{};
     std::cin >> value;
     if (wholeLine) { std::cin >> std::ws; }
     return value;
-}
+}*/

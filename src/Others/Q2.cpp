@@ -1,4 +1,4 @@
-#include <string>
+/*#include <string>
 #include <vector>
 
 /// @param names The unordered collection of regnal names. A complete regnal name may appear more than once in the
@@ -42,7 +42,7 @@ std::string readString(bool wholeLine);
     
     // return
     return 0;
-}*/
+}
 
 
 int readInteger1(bool wholeLine) {
@@ -57,4 +57,4 @@ std::string readString(bool wholeLine) {
     if (wholeLine) { std::getline(std::cin, value); }
     else { std::cin >> value; }
     return value;
-}
+}*/
